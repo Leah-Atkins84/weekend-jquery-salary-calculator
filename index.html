@@ -11,10 +11,10 @@
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <header>
-            <h1>Salary Calculator</h1>
+        <header id="head">
+            <h1 id="salaryHead">Salary Calculator</h1>
         </header>
-        <h2>Add Employee</h2>
+        <div id="add-employee">Add Employee</div>
         <table>
             <tr>
                 <td><input id="fName" type="text" placeholder="First Name" ></td>
@@ -24,19 +24,21 @@
                 <td><input id="aSalary" type="text" placeholder="Annual Salary"></td>
             </tr>
         </table>
-        <button id="submitButton"><h2>Submit</h2></button>
-        <h2>Employees</h2>
-        <table>
+        <button id="submitButton">Submit</button>
+        <br></br>
+        <div id="employees">Employees</div>
+        <table id="employee-table">
             <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>ID</th>
-                <th>Title</th>
-                <th>Annual Salary</th>
-                <th></th>
+                <th id="row">First Name</th>
+                <th id="row">Last Name</th>
+                <th id="row">ID</th>
+                <th id="row">Title</th>
+                <th id="row">Annual Salary</th>
+                <th id="row"></th>
             </tr>
+
         </table>
-        <h3>Total Monthly:</h3>
+        <div id="total-monthly">Total Monthly:</div>
 
 
         
