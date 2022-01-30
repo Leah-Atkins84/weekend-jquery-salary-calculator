@@ -10,28 +10,48 @@ function readyNow() {
     
 };
 
+let employees =[];
+
+function newEmployee(firstName, lastName, empId, empTitle, anSalary){
+    console.log('in newEmployee function', fName, lName, eId, eTitle, aSalary);
+    let employeeObj={
+        first: ftName,
+        last: lName,
+        id: eId,
+        title: eTitle,
+        salary: aSalary 
+    }
+    employees.push(employeeObj);// pushes employee info into employee array when employee added
+    
+};// end newEmployee
+
 function addEmp() {
     console.log('Added:', $( '#fName' ).val());
-   
-    $('#employee-table').append('<tr><td' + $('#fName') + '<tr><td' + $('#lName') + '<tr><td>' + $('#eId') + '<tr><td>' + $('#eTitle') + '<tr><td>' + $('#aSalary'));
     
-    $('#fName').val(''), $('#lName').val(''), $('#eId').val(''), $('#eTitle').val(''), $('#aSalary');
+    $('#fName').val(),$('#lName').val(), $('#eId').val(), $('#eTitle').val(), $('#aSalary').val();
+   
+    $('#employee-table').append('<tr>', '<td>' + `${employees.fName}` + '</td>', '<td>' + `${employees.lName}` + '</td>', '<td>' + `${employees.eId}` + '</td>', '</td>' + `${employees.eTitle}` + '</td>', '<td>' + `${employees.aSalary}` + '</td>', '</tr>');
+    
+    $('#fName').val(''), $('#lName').val(''), $('#eId').val(''), $('#eTitle').val(''), $('#aSalary').val('');
 };
 
-//$('#fName').val(),$('#lName').val(), $('#eId').val(), $('#eTitle').val(), $('#aSalary').val();
+
 
 function empTableDisplay() {
     console.log('in empTableDisplay');
     
 }
+//  function clearEmp() {
+//     console.log('in clearEmp', $('#addInput').val());  
+//     // empty input; setter
+//     $('#addInput').val('');
+//  }
 
 
 
 
 
-// function clearEmp() {
-    
-// }
+
 
 
 
