@@ -2,14 +2,16 @@ console.log('Salary Calculator');
 $(document).ready(readyNow);
 
 function readyNow() {
-    $('#addButton').on('click', addEmp);
+    console.log('ready now');
+    $('#submit-button').on('click', addEmp);
     //$('.clear-list').on('click', clearEmp);
     
 };
 
 function addEmp() {
+    console.log('in add emp');
     
-}
+};
 
 
 

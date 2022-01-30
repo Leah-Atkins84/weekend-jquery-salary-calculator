@@ -11,8 +11,8 @@
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
-        <header id="head">
-            <h1 id="salaryHead">Salary Calculator</h1>
+        <header id="top-head">
+            <h1>Salary Calculator</h1>
         </header>
         <div id="add-employee">Add Employee</div>
         <table>
@@ -24,7 +24,7 @@
                 <td><input id="aSalary" type="text" placeholder="Annual Salary"></td>
             </tr>
         </table>
-        <button id="submitButton">Submit</button>
+        <button class="submit-button">Submit</button>
         <br></br>
         <div id="employees">Employees</div>
         <table id="employee-table">
@@ -35,7 +35,11 @@
                 <th id="row">Title</th>
                 <th id="row">Annual Salary</th>
                 <th id="row"></th>
+                <td>
+                    <button class="delete-button">Delete</button>
+                </td>
             </tr>
+           
 
         </table>
         <div id="total-monthly">Total Monthly:</div>
