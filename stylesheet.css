@@ -4,7 +4,8 @@ body{
 
 header{
     background-color: rgb(34, 219, 201);
-    margin: 10px;
+    margin: 20px;
+    margin-right: 20px;
     text-align: center;
     width: 100%;
     height: 50px;
@@ -16,12 +17,9 @@ header{
     float: right;
 }
 
-table{
-   width: 100%;
 
-}
-table, th{
-    border: 1px solid grey;
+th{
+    border: 2px solid grey;
 
 }
 #employee-table{
