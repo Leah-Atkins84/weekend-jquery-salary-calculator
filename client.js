@@ -5,17 +5,16 @@ $(document).ready(readyNow);
 
 function readyNow() {
     console.log('ready now');
-   //$('.submit-button').on('click', addEmp);
+   
     $('.submit-button').on('click', newEmployee);
 
-    //$('.clear-list').on('click', clearEmp);
+    $('.clear-list').on('click', clearEmp);
     
 };
 
 let employees=[];
 
 function newEmployee(){
-    // console.log('in newEmployee function', fName, lName, eId, eTitle, aSalary);
     let employeeObj={
         first: $('#fName').val(),
         last: $('#lName').val(),
@@ -32,37 +31,34 @@ function newEmployee(){
        <td> ${employeeObj.id}</td>
        <td> ${employeeObj.title}</td>
        <td> ${employeeObj.salary}</td>
+       <td> ${'<button class="delete-button">Delete</button>'}
        </tr>`);
-       $('#fName').val(''), $('#lName').val(''), $('#eId').val(''), $('#eTitle').val(''), $('#aSalary').val('');
-    
+       $('#fName').val('');
+       $('#lName').val('');
+       $('#eId').val('');
+       $('#eTitle').val('');
+       $('#aSalary').val('');
 
-``
+    
 };// end newEmployee
 
-// function addEmp() {
-//     console.log('Added:', $( '#fName' ).val());
-    
-//     //$('#fName').val(), $('#lName').val(), $('#eId').val(), $('#eTitle').val(), $('#aSalary').val();
-   
-//$('#employee-table').append(`'<tr>', '<td>' + ${employees.fName} + '</td>', '<td>' + ${employees.lName} + '</td>', '<td>' + ${employees.eId} + '</td>', '</td>' + ${employees.eTitle} + '</td>', '<td>' + ${employees.aSalary} + '</td>', '</tr>'`);
-    
-//    // $('#fName').val(''), $('#lName').val(''), $('#eId').val(''), $('#eTitle').val(''), $('#aSalary').val('');
-    
-// };
-
-console.log(employees);
+function clearEmp() {
+    console.log('in clearEmp', $('#employee-table').val());  
+    // empty employee table; setter
+    $('#employee-table').val('');
+    }
+    clearEmp();
 
 
 
-function empTableDisplay() {
-    console.log('in empTableDisplay');
+
+
+
+// function empTableDisplay() {
+//     console.log('in empTableDisplay');
     
-}
-//  function clearEmp() {
-//     console.log('in clearEmp', $('#addInput').val());  
-//     // empty input; setter
-//     $('#addInput').val('');
-//  }
+// }
+
 
 
 
